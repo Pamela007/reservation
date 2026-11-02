@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVATIONS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="flex justify-between items-center mt-34">
+        <div class="flex flex-col w-4xl bg-base-200 rounded-xl p-6">
+            <div class="w-full h-fit">
+                <h1 class="text-2xl font-bold">Liste des réservations</h1>
+                <a href="{% url 'creer_reservation' %}" class="btn btn-accent">Créer une réservation</a> {% block content %} {% endblock %}
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
